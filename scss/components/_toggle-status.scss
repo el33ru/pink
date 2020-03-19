@@ -1,0 +1,41 @@
+//.js__toggle {
+//  display: none;
+//
+//  cursor: pointer;
+//  position: absolute;
+//  top: 45px;
+//  right: 20px;
+//
+//  //display: inline-block;
+//  width: 50px;
+//  height: 28px;
+//
+//  background-color: transparent;
+//  border: none;
+//  &::before {
+//    content: "";
+//
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//
+//    width: 50px;
+//    height: 4px;
+//
+//    background-color: #ffffff;
+//    box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+//  }
+//}
+//
+//@media (max-width: $tablet-width) {
+//  .toggle-status--nojs .js__toggle {
+//    display: block;
+//  }
+//}
+////
+////
+////@media (min-width: $tablet-width) {
+////  .toggle-status {
+////    display: none;
+////  }
+////}

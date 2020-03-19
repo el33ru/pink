@@ -1,0 +1,70 @@
+.page-header__burger {
+  display: none;
+}
+
+.burger span {
+  transition: all 0.3s ease;
+  width: 26px;
+  height: 4px;
+  background-color: #ffffff;
+  display: block;
+  margin: 3px;
+}
+
+.first {
+  transform: translate(0px, 10px) rotate(45deg);
+}
+
+.middle {
+  transform: scale(0)
+}
+
+.last {
+  transform:  translate(0px, -10px) rotate(-45deg);
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-header__burger {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+
+    width: 26px;
+    height: 30px;
+
+    cursor: pointer;
+    display: block;
+    &:hover span {
+      background-color: $bg-pink;
+    }
+    &:active span {
+      background-color: $bg-pink;
+      opacity: 0.3;
+    }
+  }
+
+  .burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+
+    width: 26px;
+    height: 30px;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  .burger-status--nojs .js__burger {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-header__burger {
+    top: 15px;
+  }
+}

@@ -1,0 +1,148 @@
+.contacts__header {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 470px;
+
+  font-size: 50px;
+  font-weight: 300;
+  color: #283645;
+
+  text-align: center;
+}
+
+.contacts__list {
+  @include reset-list;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.contacts__item {
+  margin-top: 55px;
+
+  max-width: 250px;
+  width: 100%;
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: #283645;
+
+  text-align: center;
+}
+
+.contacts__description {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+
+  font-size: 24px;
+  font-weight: normal;
+  color: $bg-pink;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contacts__item a {
+  font-weight: 300;
+  &:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+.contacts__map {
+  position: relative;
+
+  margin-top: 25px;
+  height: 505px;
+}
+
+.contacts__container {
+  position: absolute;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.contacts__triangle {
+  margin: 0 auto;
+  width: 1200px;
+  height: 130px;
+  z-index: 1;
+
+  background-image: url("../../img/triangle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  //background-position: 0 -30px;
+}
+
+
+@media (max-width: 800px){
+  .contacts__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts__item {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .item__address {
+    order: 2;
+  }
+
+  .contacts__description {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__header {
+    margin-top: 50px;
+    max-width: 370px;
+
+    font-size: 40px;
+  }
+
+  .contacts__map {
+    height: 375px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__header {
+    font-size: 24px;
+  }
+
+  .contacts__item {
+    margin-top: 40px;
+  }
+
+  .contacts__map {
+    margin-top: 35px;
+    height: 200px;
+  }
+}

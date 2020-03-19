@@ -1,0 +1,38 @@
+.page-main__header {
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 65px;
+
+  font-weight: 300;
+  font-size: 50px;
+  max-width: 800px;
+  color: #283645;
+
+  text-align: center;
+}
+
+.header__answer {
+  margin-top: 0;
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-main__header {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  .page-main__header {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+
+  .header__answer {
+    margin-top: 35px;
+  }
+}
+
